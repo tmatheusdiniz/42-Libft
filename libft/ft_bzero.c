@@ -6,7 +6,7 @@
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 21:42:15 by mreinald          #+#    #+#             */
-/*   Updated: 2024/10/22 21:48:20 by mreinald         ###   ########.fr       */
+/*   Updated: 2024/10/27 20:06:33 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_bzero(void *s, size_t n)
 {
 	char	*p;
 
-	p = (char *) s;
+	p = (char *)s;
 	while (n -- > 0)
 		*p ++ = '\0';
 }

@@ -1,33 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 20:03:24 by mreinald          #+#    #+#             */
-/*   Updated: 2024/10/27 15:56:14 by mreinald         ###   ########.fr       */
+/*   Created: 2024/10/27 19:04:28 by mreinald          #+#    #+#             */
+/*   Updated: 2024/10/27 20:33:00 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void	*ft_memset(void *s, int c, size_t n)
+size_t	ft_strlcat(char *dst, char *src, size_t size)
 {
-	unsigned char	*m;
+	size_t	n;
+	size_t	dst_len;
 
-	m = s;
-	while (n -- > 0)
-		*m ++ = (unsigned char) c;
-	return (s);
+	n = 0;
+	dst_len = ft_strlen(dst);
+	if (size <= dst_len)
+	{
+		return (size + ft_strlen(src));
+	}
+	while (src[n] != '\0' && n < size - dst_len - 1)
+	{
+		dst[dst_len + n] = src[n];
+		n ++;
+	}
+	dst[dst_len + n] = '\0';
+	return (ft_strlen(dst) + ft_strlen(&src[n]));
 }
-/*
-int main(void)
-{
-    int test[5];
-    int *pointer;
-
-    pointer = ft_memset(test, 300, sizeof(test));
-    printf("Result = %i\n", test[0]);
-}
-*/

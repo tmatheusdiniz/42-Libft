@@ -1,33 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 20:03:24 by mreinald          #+#    #+#             */
-/*   Updated: 2024/10/27 15:56:14 by mreinald         ###   ########.fr       */
+/*   Created: 2024/10/27 18:55:07 by mreinald          #+#    #+#             */
+/*   Updated: 2024/10/27 20:08:43 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void	*ft_memset(void *s, int c, size_t n)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	unsigned char	*m;
+	size_t	aux;
+	size_t	i;
 
-	m = s;
-	while (n -- > 0)
-		*m ++ = (unsigned char) c;
-	return (s);
+	i = 0;
+	aux = 0;
+	while (src[aux] != '\0')
+	{
+		aux ++;
+	}
+	if (size != 0)
+	{
+		while (i < size - 1 && src[i] != '\0')
+		{
+			dst[i] = src[i];
+			i ++;
+		}
+		dst[i] = '\0';
+	}
+	return (aux);
 }
-/*
-int main(void)
-{
-    int test[5];
-    int *pointer;
-
-    pointer = ft_memset(test, 300, sizeof(test));
-    printf("Result = %i\n", test[0]);
-}
-*/
