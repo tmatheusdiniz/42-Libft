@@ -1,22 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 21:42:15 by mreinald          #+#    #+#             */
-/*   Updated: 2024/11/01 17:32:42 by mreinald         ###   ########.fr       */
+/*   Created: 2024/11/01 18:28:20 by mreinald          #+#    #+#             */
+/*   Updated: 2024/11/01 19:13:35 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void	ft_bzero(void *s, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	char	*p;
-    
-    p = (char *)s;
-	while (n -- > 0)
-		*p ++ = '\0';
+	while (n -- > 0 && *(char *)s)
+	{
+		if (*(unsigned char *)s == (unsigned char)c)
+			return ((void *)s);
+		n --;
+		s ++;
+	}
+	return (NULL);
 }
+
+int	main(void)
+{
+    char        *t;
+    const char  *p = "pointer.";
+   
+	t = ft_memchr(p, 46, 9);
+	printf("byte found: %s\n", t);
+}
+//
