@@ -14,6 +14,7 @@ Commom Core 42 - Libft
     <span> · </span>
     <a href="#FFD700-about">About</a>
     <span> · </span>
+    <a href="#%EF%B8%8F-resources">Resources</a>
 <h3/>
 
 ## 📖 Libft
