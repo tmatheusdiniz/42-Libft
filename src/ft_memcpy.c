@@ -6,13 +6,11 @@
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 16:35:15 by mreinald          #+#    #+#             */
-/*   Updated: 2024/10/27 20:08:25 by mreinald         ###   ########.fr       */
+/*   Updated: 2024/11/03 16:05:15 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

@@ -6,17 +6,17 @@
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 21:42:15 by mreinald          #+#    #+#             */
-/*   Updated: 2024/11/01 17:32:42 by mreinald         ###   ########.fr       */
+/*   Updated: 2024/11/03 16:30:10 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
 	char	*p;
-    
-    p = (char *)s;
+
+	p = (char *)s;
 	while (n -- > 0)
 		*p ++ = '\0';
 }

@@ -6,11 +6,11 @@
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 18:28:20 by mreinald          #+#    #+#             */
-/*   Updated: 2024/11/01 19:13:35 by mreinald         ###   ########.fr       */
+/*   Updated: 2024/11/03 15:32:22 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -23,13 +23,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
-int	main(void)
-{
-    char        *t;
-    const char  *p = "pointer.";
-   
-	t = ft_memchr(p, 46, 9);
-	printf("byte found: %s\n", t);
-}
-//

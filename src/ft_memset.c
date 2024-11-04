@@ -6,11 +6,11 @@
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 20:03:24 by mreinald          #+#    #+#             */
-/*   Updated: 2024/10/27 15:56:14 by mreinald         ###   ########.fr       */
+/*   Updated: 2024/11/03 16:05:33 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {

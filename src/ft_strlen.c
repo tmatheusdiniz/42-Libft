@@ -6,11 +6,11 @@
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 19:27:16 by mreinald          #+#    #+#             */
-/*   Updated: 2024/10/22 21:37:38 by mreinald         ###   ########.fr       */
+/*   Updated: 2024/11/03 16:06:08 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 size_t	ft_strlen( const char *s)
 {

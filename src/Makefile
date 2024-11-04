@@ -1,0 +1,69 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2024/11/03 22:38:40 by mreinald          #+#    #+#              #
+#    Updated: 2024/11/04 16:44:28 by mreinald         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME = libft.a
+
+stdlib_h = ft_atoi.c ft_calloc.c
+
+string_h = ft_strlen.c ft_strchr.c ft_strnstr.c ft_strncmp.c ft_strlcpy.c ft_strlcat.c
+
+strings_h = ft_bzero.c ft_memcpy.c ft_memchr.c ft_memcmp.c ft_memmove.c ft_memset.c
+
+ctype_h = ft_isalnum.c ft_isascii.c ft_isalpha.c ft_isdigit.c ft_isprint.c ft_toupper.c ft_tolower.c
+
+non_stardad = ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_itoa.c ft_substr.c ft_strtrim.c ft_strjoin.c ft_split.c ft_strmapi.c
+
+linked_list = ft_lstnew.c ft_lstsize.c ft_lstlast.c ft_lstadd_front.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
+
+SRC = ${stdlib_h} ${string_h} ${strings_h} ${ctype_h} ${non_stardad}
+
+OBJS = ${SRC:.c=.o}
+OBJS_linked = ${linked_list:.c=.o}
+
+CC = gcc
+RM = rm -f
+FLAGS = -Wall -Wextra -Werror
+INCLUDE = -I
+
+.o:.c
+    ${CC} ${FLAGS} ${INCLUDE} -c $< -o ${<:.c=.o}
+
+${NAME}:{OBJS}
+	ar rcs ${NAME} ${OBJS}
+
+all: ${NAME}
+
+bonus : ${OBJS} ${OBJS_linked}
+	ar rcs ${NAME} ${OBJS_linked} ${OBJS}
+
+clean : ${RM} ${OBJS} ${OBJS_linked}
+
+fclean : clean
+	${RM} ${NAME}
+
+re : fclean all
+
+.PHONY: all clean fclean re
+
+
+
+
+
+
+
+
+
+
+
+
+
+
