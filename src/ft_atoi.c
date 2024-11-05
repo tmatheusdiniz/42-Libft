@@ -6,7 +6,7 @@
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 17:03:00 by mreinald          #+#    #+#             */
-/*   Updated: 2024/11/04 17:19:29 by mreinald         ###   ########.fr       */
+/*   Updated: 2024/11/05 20:14:21 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int i;
-	int sign;
-	int res;
+	int	i;
+	int	sign;
+	int	res;
 
 	i = 0;
 	sign = 1;
@@ -26,18 +26,10 @@ int	ft_atoi(const char *nptr)
 	while (nptr[i] == 45 || nptr[i] == 43)
 	{
 		if (nptr[i] == 45)
-			sign = -sign;												
+			sign = -sign;
 		i ++;
 	}
 	while (nptr[i] >= '0' && nptr[i] <= '9')
 		res = res * 10 + nptr[i++] - '0';
 	return (res * sign);
 }
-/*
-int	main(void)
-{
-	const char	*ptr = "+++--1123";
-	printf("result = %i\n", ft_atoi(ptr));
-
-}
-*/

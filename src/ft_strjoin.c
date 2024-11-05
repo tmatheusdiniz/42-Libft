@@ -1,26 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/04 18:06:54 by mreinald          #+#    #+#             */
-/*   Updated: 2024/11/05 20:10:24 by mreinald         ###   ########.fr       */
+/*   Created: 2024/11/05 19:37:06 by mreinald          #+#    #+#             */
+/*   Updated: 2024/11/05 20:03:05 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*calloc(size_t nmemb, size_t size)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	n;
-	void	*p;
+	int		i;
+	char	*strjoin;
 
-	n = nmemb * size;
-	p = malloc(n);
-	if (!p)
+	i = 0;
+	if (!s1 || !s2)
 		return (NULL);
-	ft_bzero(p, n);
-	return (p);
+	strjoin = (char *)malloc((strlen(s1) + strlen(s2) + 1) * sizeof(char));
+	if (!strjoin)
+		return (NULL);
+	while (*s1)
+		strjoin[i++] = *s1++;
+	while (*s2)
+		strjoin[i++] = *s2++;
+	strjoin[i] = '\0';
+	return (strjoin);
 }
+/*
+int	main(void)
+{
+	char	*test = "Hello";
+	char	*test2 = "World";
+
+	printf("Result : %s\n", ft_strjoin(test, test2));
+}
+*/
