@@ -6,7 +6,7 @@
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 20:29:53 by mreinald          #+#    #+#             */
-/*   Updated: 2024/11/04 16:25:51 by mreinald         ###   ########.fr       */
+/*   Updated: 2024/11/05 14:56:53 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int		ft_isprint(int c);
 
 //Non-standard functions
 
-char	*ft_substr(const char c, unsigned int start, size_t len);
+char	*ft_substr(char const  *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s, char const *set);
 char	**ft_split(char const *s, char c);
