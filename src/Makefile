@@ -6,7 +6,7 @@
 #    By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/03 22:38:40 by mreinald          #+#    #+#              #
-#    Updated: 2024/11/04 16:44:28 by mreinald         ###   ########.fr        #
+#    Updated: 2024/11/08 21:49:39 by mreinald         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ linked_list = ft_lstnew.c ft_lstsize.c ft_lstlast.c ft_lstadd_front.c ft_lstadd_
 SRC = ${stdlib_h} ${string_h} ${strings_h} ${ctype_h} ${non_stardad}
 
 OBJS = ${SRC:.c=.o}
-OBJS_linked = ${linked_list:.c=.o}
+OBJS_BONUS = ${linked_list:.c=.o}
 
 CC = gcc
 RM = rm -f
@@ -35,17 +35,18 @@ FLAGS = -Wall -Wextra -Werror
 INCLUDE = -I
 
 .o:.c
-    ${CC} ${FLAGS} ${INCLUDE} -c $< -o ${<:.c=.o}
+	${CC} ${FLAGS} ${INCLUDE} -c $< -o ${<:.c=.o}
 
-${NAME}:{OBJS}
+${NAME}:${OBJS}
 	ar rcs ${NAME} ${OBJS}
 
-all: ${NAME}
+all:	${NAME}
 
-bonus : ${OBJS} ${OBJS_linked}
-	ar rcs ${NAME} ${OBJS_linked} ${OBJS}
+bonus :	${OBJS} ${OBJS_BONUS}
+	ar rcs ${NAME} ${OBJS_BONUS} ${OBJS}
 
-clean : ${RM} ${OBJS} ${OBJS_linked}
+clean :
+	${RM} ${OBJS} ${OBJS_BONUS}
 
 fclean : clean
 	${RM} ${NAME}
@@ -53,17 +54,3 @@ fclean : clean
 re : fclean all
 
 .PHONY: all clean fclean re
-
-
-
-
-
-
-
-
-
-
-
-
-
-
