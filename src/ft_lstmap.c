@@ -1,0 +1,35 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/09 19:49:13 by mreinald          #+#    #+#             */
+/*   Updated: 2024/11/09 20:10:27 by mreinald         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+{
+	t_list	*new_node;
+	t_list	*aux;
+
+	if (!lst || !f || !del)
+		return (NULL);
+	new_node = NULL;
+	while (lst != NULL)
+	{
+		aux = ft_lstnew(f(lst->content));
+		if (!aux)
+		{
+			ft_lstclear(&aux, del);
+			return (NULL);
+		}
+		ft_lstadd_back(&new_node, aux);
+		lst = lst->next;
+	}
+	return (new_node);
+}

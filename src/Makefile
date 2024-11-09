@@ -6,7 +6,7 @@
 #    By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/03 22:38:40 by mreinald          #+#    #+#              #
-#    Updated: 2024/11/08 21:49:39 by mreinald         ###   ########.fr        #
+#    Updated: 2024/11/09 17:11:40 by mreinald         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ ctype_h = ft_isalnum.c ft_isascii.c ft_isalpha.c ft_isdigit.c ft_isprint.c ft_to
 
 non_stardad = ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_itoa.c ft_substr.c ft_strtrim.c ft_strjoin.c ft_split.c ft_strmapi.c
 
-linked_list = ft_lstnew.c ft_lstsize.c ft_lstlast.c ft_lstadd_front.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
+linked_list = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 
 SRC = ${stdlib_h} ${string_h} ${strings_h} ${ctype_h} ${non_stardad}
 
