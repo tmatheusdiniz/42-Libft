@@ -29,7 +29,7 @@ SRC = ${stdlib_h} ${string_h} ${strings_h} ${ctype_h} ${non_stardad}
 OBJS = ${SRC:.c=.o}
 OBJS_BONUS = ${linked_list:.c=.o}
 
-CC = gcc
+CC = cc
 RM = rm -f
 FLAGS = -Wall -Wextra -Werror
 INCLUDE = -I
