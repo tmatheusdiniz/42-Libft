@@ -32,16 +32,15 @@ Funcitons from libraries such as <stdlib.h>, <string.h>, <strings.h> and <ctype.
 ### Functions from `<stdlib.h>` library
 
 * [`ft_atoi`](src/ft_atoi.c)		- convert ASCII string to integer.
-* [`ft_calloc`](src/ft_calloc.c)	- memory allocation.
+* [`ft_strdup`](src/ft_strdup.c)    - memmory allocantion.
+* [`ft_calloc`](src/ft_calloc.c)	- memory allocation and set to zero.
 
 ### Functions from `<string.h>` library
 
 * [`ft_strlen`](src/ft_strlen.c)				- find length of string.
 * [`ft_strchr`](src/ft_strchr.c)				- locate character in string (first occurrence).
 * [`ft_strrchr`](src/ft_strrchr.c)			- locate character in string (last occurence).
-* [`ft_strstr`](src/ft_strstr.c) 		- locate a substring in a string.
 * [`ft_strnstr`](src/ft_strnstr.c)			- locate a substring in a string (size-bounded).
-* [`ft_strcmp`](src/ft_strcmp.c) 		- compare strings.
 * [`ft_strncmp`](src/ft_strncmp.c) 			- compare strings (size-bounded).
 * [`ft_strlcpy`](src/ft_strlcpy.c)			- size-bounded string copying.
 * [`ft_strlcat`](src/ft_strlcat.c)			- size-bounded string concatenation.
@@ -49,7 +48,6 @@ Funcitons from libraries such as <stdlib.h>, <string.h>, <strings.h> and <ctype.
 ### Functions from `<strings.h>` library
 
 * [`ft_bzero`](src/ft_bzero.c)		- write zeroes to a byte string.
-* [`ft_memccpy`](src/ft_memccpy.c)	- copy string until character found.
 * [`ft_memchr`](src/ft_memchr.c)		- locate byte in byte string.
 * [`ft_memcmp`](src/ft_memcmp.c)		- compare byte string.
 * [`ft_memcpy`](src/ft_memcpy.c)		- copy memory area.
@@ -62,8 +60,6 @@ Funcitons from libraries such as <stdlib.h>, <string.h>, <strings.h> and <ctype.
 * [`ft_isalnum`](src/ft_isalnum.c)			- alphanumeric character test.
 * [`ft_isascii`](src/ft_isascii.c)			- test for ASCII character.
 * [`ft_isalpha`](src/ft_isalpha.c)			- alphabetic character test.
-* [`ft_islower`](src/ft_islower.c) 	- lower-case character test.
-* [`ft_isupper`](src/ft_isupper.c) 	- upper-case character test.
 * [`ft_isdigit`](src/ft_isdigit.c)			- decimal-digit character test.
 * [`ft_isprint`](src/ft_isprint.c)			- printing character test.
 * [`ft_tolower`](src/ft_tolower.c)			- upper case to lower case letter conversion.
@@ -80,6 +76,7 @@ Funcitons from libraries such as <stdlib.h>, <string.h>, <strings.h> and <ctype.
 * [`ft_strtrim`](src/ft_strtrim.c)			- trim beginning and end of string with the specified characters.
 * [`ft_strjoin`](src/ft_strjoin.c)			- concatenate two strings into a new string (with malloc).
 * [`ft_split`](src/ft_split.c)				- split string, with specified character as delimiter, into an array of strings.
+* [`ft_striteri`](src/ft_striteri.c)        - iterates over all the elements of the string with the function passed as an argument.
 * [`ft_strmapi`](src/ft_strmapi.c)			- create new string from modifying string with specified function.
 
   ### Linked list functions
