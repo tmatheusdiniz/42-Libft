@@ -6,7 +6,7 @@
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 20:29:53 by mreinald          #+#    #+#             */
-/*   Updated: 2024/11/09 20:30:47 by mreinald         ###   ########.fr       */
+/*   Updated: 2024/11/10 00:13:36 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,8 @@ int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
+int		ft_tolower(int c);
+int		ft_toupper(int c);
 
 //Non-standard functions
 
@@ -73,7 +75,7 @@ typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
-}	t_list;
+}					t_list;
 
 int		ft_lstsize(t_list *lst);
 t_list	*ft_lstnew(void *content);

@@ -6,7 +6,7 @@
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 11:10:33 by mreinald          #+#    #+#             */
-/*   Updated: 2024/11/08 14:50:45 by mreinald         ###   ########.fr       */
+/*   Updated: 2024/11/10 00:17:12 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,29 +86,4 @@ char	**ft_split(char const *s, char c)
 	}
 	matrix[i] = 0;
 	return (matrix);
-}
-
-int	main(int c, char **v)
-{
-	int		i;
-	char	**matrix;
-
-	i = 0;
-	if (c > 3)
-		return (0);
-	matrix = ft_split(v[1], v[2][0]);
-	if (matrix == NULL)
-		return (1);
-	while (matrix[i])
-	{
-		printf("substring : %s\n", matrix[i]);
-		i ++;
-	}
-	i = 0;
-	while (matrix[i])
-	{
-		free(matrix[i]);
-		i ++;
-	}
-	free(matrix);
 }

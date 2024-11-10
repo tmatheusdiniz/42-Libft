@@ -6,7 +6,7 @@
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 14:30:00 by mreinald          #+#    #+#             */
-/*   Updated: 2024/11/06 22:10:19 by mreinald         ###   ########.fr       */
+/*   Updated: 2024/11/09 23:58:14 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,15 +60,3 @@ char	*ft_itoa(int n)
 	}
 	return (itoa);
 }
-/*
-int	main(int c, char **v)
-{
-	int		n;
-	char	*ptr;
-	if (c > 2)
-		return (0);
-	n = atoi(v[1]);
-	ptr = ft_itoa(n);
-	printf("Itoa : %s\n", ptr);
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 18:49:22 by mreinald          #+#    #+#             */
-/*   Updated: 2024/11/03 16:04:52 by mreinald         ###   ########.fr       */
+/*   Updated: 2024/11/09 23:58:02 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,3 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
-/*
-int main(void)
-{
-    char    a;
-
-    a = '4';
-    printf("Result: %i\n", ft_isdigit(a));
-}
-*/

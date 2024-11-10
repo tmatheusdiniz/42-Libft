@@ -6,7 +6,7 @@
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 14:30:32 by mreinald          #+#    #+#             */
-/*   Updated: 2024/11/05 20:25:20 by mreinald         ###   ########.fr       */
+/*   Updated: 2024/11/10 00:15:21 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substr[len] = '\0';
 	return (substr);
 }
-/*
-int	main(void)
-{
-	const char	*test = "Hello World!";
-	char		*substr;
-	substr = ft_substr(test, 7, 5);
-	printf("substr: %s\n", substr);
-}
-*/

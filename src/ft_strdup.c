@@ -6,7 +6,7 @@
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 17:21:24 by mreinald          #+#    #+#             */
-/*   Updated: 2024/11/04 18:06:11 by mreinald         ###   ########.fr       */
+/*   Updated: 2024/11/09 23:59:58 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,3 @@ char	*ft_strdup(const char *s)
 	duplicate[i] = '\0';
 	return (duplicate);
 }
-/*
-int	main(void)
-{
-	char	*ptr = "Hello World!";
-	char	*test;
-	test = ft_strdup(ptr);
-	printf("result : %s\n", test);
-}
-*/

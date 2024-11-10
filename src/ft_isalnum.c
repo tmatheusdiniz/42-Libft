@@ -6,7 +6,7 @@
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 18:49:32 by mreinald          #+#    #+#             */
-/*   Updated: 2024/11/03 16:03:24 by mreinald         ###   ########.fr       */
+/*   Updated: 2024/11/10 00:14:19 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,16 +21,3 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-/*
-int	main(void)
-{
-	char	a;
-
-	a = '!';
-	printf("Result : %i\n", ft_isalnum(a));
-	a = 'm';
-	printf("Result : %i\n", ft_isalnum(a));
-	a = '3';
-	printf("Result : %i\n", ft_isalnum(a));
-}
-*/

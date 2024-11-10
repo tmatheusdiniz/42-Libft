@@ -6,7 +6,7 @@
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 14:22:41 by mreinald          #+#    #+#             */
-/*   Updated: 2024/11/03 16:05:25 by mreinald         ###   ########.fr       */
+/*   Updated: 2024/11/10 00:16:25 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,20 +38,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*
-int	main(void)
-{
-	volatile char	*dest = (char *)0x1000;
-	volatile char	*src = (char *)0x1005;
-	const char *string = "Hello world";
-    size_t len = strlen(string);
-    for (size_t i = 0; i < len + 1; i++) 
-	{
-        *(char *)(src + i) = string[i];
-    }
-	printf("Src before: %s\n", src);
-	ft_memmove(dest, src, 7);
-	printf("Dest: %s\n", dest);
-	printf("Src after: %s\n", src);
-}
-*/

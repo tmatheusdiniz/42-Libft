@@ -6,7 +6,7 @@
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 14:26:39 by mreinald          #+#    #+#             */
-/*   Updated: 2024/11/08 14:48:13 by mreinald         ###   ########.fr       */
+/*   Updated: 2024/11/10 00:00:08 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,23 +25,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i ++;
 	}
 }
-/*
-void	iteri(unsigned int index, char *s)
-{
-	if (index % 2 == 0)
-		*s += 2;
-	else
-		*s += 1;
-}
-
-int	main(void)
-{
-	char	*s;
-	s[0] = 'H';
-	s[1] = 'E';
-	s[2] = '\0';
-	printf("s before : %s\n", s);
-	ft_striteri(s, &iteri);
-	printf("s after : %s\n", s);
-}
-*/

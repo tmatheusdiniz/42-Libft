@@ -6,21 +6,21 @@
 #    By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/03 22:38:40 by mreinald          #+#    #+#              #
-#    Updated: 2024/11/09 17:11:40 by mreinald         ###   ########.fr        #
+#    Updated: 2024/11/10 00:41:56 by mreinald         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-stdlib_h = ft_atoi.c ft_calloc.c
+stdlib_h = ft_atoi.c ft_strdup.c ft_calloc.c
 
-string_h = ft_strlen.c ft_strchr.c ft_strnstr.c ft_strncmp.c ft_strlcpy.c ft_strlcat.c
+string_h = ft_strlen.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_strlcpy.c ft_strlcat.c
 
 strings_h = ft_bzero.c ft_memcpy.c ft_memchr.c ft_memcmp.c ft_memmove.c ft_memset.c
 
 ctype_h = ft_isalnum.c ft_isascii.c ft_isalpha.c ft_isdigit.c ft_isprint.c ft_toupper.c ft_tolower.c
 
-non_stardad = ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_itoa.c ft_substr.c ft_strtrim.c ft_strjoin.c ft_split.c ft_strmapi.c
+non_stardad = ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_itoa.c ft_substr.c ft_strtrim.c ft_strjoin.c ft_split.c ft_strmapi.c ft_striteri.c
 
 linked_list = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 

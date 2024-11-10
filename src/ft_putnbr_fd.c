@@ -6,7 +6,7 @@
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 20:14:14 by mreinald          #+#    #+#             */
-/*   Updated: 2024/11/08 21:03:13 by mreinald         ###   ########.fr       */
+/*   Updated: 2024/11/09 23:59:34 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,3 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	ft_putchar((number % 10) + '0', fd);
 }
-/*
-int	main(int c, char **v)
-{
-	(void)c;
-	ft_putnbr_fd(atoi(v[1]), 1);
-}
-*/

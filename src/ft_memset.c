@@ -6,7 +6,7 @@
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 20:03:24 by mreinald          #+#    #+#             */
-/*   Updated: 2024/11/03 16:05:33 by mreinald         ###   ########.fr       */
+/*   Updated: 2024/11/09 23:59:09 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,3 @@ void	*ft_memset(void *s, int c, size_t n)
 		*m ++ = (unsigned char) c;
 	return (s);
 }
-/*
-int main(void)
-{
-    int test[5];
-    int *pointer;
-
-    pointer = ft_memset(test, 300, sizeof(test));
-    printf("Result = %i\n", test[0]);
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 20:41:04 by mreinald          #+#    #+#             */
-/*   Updated: 2024/11/03 16:05:45 by mreinald         ###   ########.fr       */
+/*   Updated: 2024/11/09 23:59:53 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (NULL);
 }
-/*
-int main(void)
-{
-	const char	*s = "Hello World!";
-	char	chr = '\0';
-	char	*test;
-	test = ft_strchr(s, chr);
-	printf("test : %s\n", test);
-}
-*/

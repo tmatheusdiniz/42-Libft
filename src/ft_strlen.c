@@ -6,13 +6,13 @@
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 19:27:16 by mreinald          #+#    #+#             */
-/*   Updated: 2024/11/03 16:06:08 by mreinald         ###   ########.fr       */
+/*   Updated: 2024/11/10 00:22:55 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen( const char *s)
+size_t	ft_strlen(const char *s)
 {
 	int	count;
 
@@ -24,11 +24,3 @@ size_t	ft_strlen( const char *s)
 	}
 	return (count);
 }
-/*
-int	main(void)
-{
-	char *test = "Matheus Diniz";
-
-	printf("Result : %zu\n", ft_strlen(test));
-}
-*/
