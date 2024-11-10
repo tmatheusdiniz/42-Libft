@@ -19,16 +19,16 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	if ((!big || !little) && len == 0)
 		return (NULL);
+	if (!(*little))
+		return ((char *)big);
 	i = 0;
 	little_len = ft_strlen(little);
-	if (!*little)
-		return ((char *)big);
-	while (*big != '\0' && len -- > 0 && i < len - little_len)
+	while (*big != '\0' && len > 0)
 	{
-		if (*big == *little)
-			if (!ft_memcmp(big, little, little_len))
-				return ((char *)big);
+		if (!(ft_strncmp(big, little, little_len)) && len >= little_len)
+			return ((char *)big);
 		big ++;
+		len --;
 	}
 	return (NULL);
 }
