@@ -14,14 +14,12 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t	i;
 	size_t	little_len;
 
 	if ((!big || !little) && len == 0)
 		return (NULL);
 	if (!(*little))
 		return ((char *)big);
-	i = 0;
 	little_len = ft_strlen(little);
 	while (*big != '\0' && len > 0)
 	{

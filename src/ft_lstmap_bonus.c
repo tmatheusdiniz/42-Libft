@@ -16,13 +16,17 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new_node;
 	t_list	*aux;
+	t_list	*aux_malloc;
 
 	if (!lst || !f || !del)
 		return (NULL);
 	new_node = NULL;
 	while (lst != NULL)
 	{
-		aux = ft_lstnew(f(lst->content));
+		aux_malloc = f(lst->content);
+		if (!aux_malloc)
+			return (ft_lstclear(&aux_malloc, del), NULL);
+		aux = ft_lstnew(aux_malloc);
 		if (!aux)
 		{
 			ft_lstclear(&aux, del);

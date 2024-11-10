@@ -41,6 +41,16 @@ static int	count_words(char const *s, char c)
 	return (count);
 }
 
+static	void	free_words(char **s, int index)
+{
+	while (s[index])
+	{
+		free (s[index]);
+		index --;
+	}
+	free(s);
+}
+
 static char	*insert_words(char const *s, char c)
 {
 	int		i;
@@ -77,6 +87,8 @@ char	**ft_split(char const *s, char c)
 		if (*s != c)
 		{
 			matrix[i] = insert_words(s, c);
+			if (!matrix[i])
+				return (free_words(matrix, i), NULL);
 			while (*s && *s != c)
 				s ++;
 			i ++;
