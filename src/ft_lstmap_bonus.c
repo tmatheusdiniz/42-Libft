@@ -25,11 +25,12 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	{
 		aux_malloc = f(lst->content);
 		if (!aux_malloc)
-			return (ft_lstclear(&aux_malloc, del), NULL);
+			return (ft_lstclear(&new_node, del), NULL);
 		aux = ft_lstnew(aux_malloc);
 		if (!aux)
 		{
-			ft_lstclear(&aux, del);
+			del(aux_malloc);
+			ft_lstclear(&new_node, del);
 			return (NULL);
 		}
 		ft_lstadd_back(&new_node, aux);

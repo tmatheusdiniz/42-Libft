@@ -43,10 +43,13 @@ static int	count_words(char const *s, char c)
 
 static	void	free_words(char **s, int index)
 {
-	while (s[index])
+	int	i;
+
+	i = 0;
+	while (i < index)
 	{
-		free (s[index]);
-		index --;
+		free (s[i]);
+		i ++;
 	}
 	free(s);
 }
