@@ -31,11 +31,11 @@ OBJS_BONUS = ${linked_list:.c=.o}
 
 CC = cc
 RM = rm -f
-FLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 INCLUDE = -I
 
 .o:.c
-	${CC} ${FLAGS} ${INCLUDE} -c $< -o ${<:.c=.o}
+	${CC} ${CFLAGS} ${INCLUDE} -c $< -o ${<:.c=.o}
 
 ${NAME}:${OBJS}
 	ar rcs ${NAME} ${OBJS}
