@@ -43,7 +43,7 @@ ${NAME}:${OBJS}
 all:	${NAME}
 
 bonus :	${OBJS} ${OBJS_BONUS}
-	ar rcs ${NAME} ${OBJS_BONUS} ${OBJS}
+	@ar rcs ${NAME} $^
 
 clean :
 	${RM} ${OBJS} ${OBJS_BONUS}
