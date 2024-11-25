@@ -1,35 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_isupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/08 20:14:14 by mreinald          #+#    #+#             */
-/*   Updated: 2024/11/09 23:59:34 by mreinald         ###   ########.fr       */
+/*   Created: 2024/11/25 15:51:23 by mreinald          #+#    #+#             */
+/*   Updated: 2024/11/25 15:54:20 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	ft_putchar_local(char c, int fd)
+int	ft_isupper(int c)
 {
-	write(fd, &c, 1);
-}
-
-void	ft_putnbr_fd(int n, int fd)
-{
-	long int	number;
-
-	number = n;
-	if (number < 0)
-	{
-		ft_putchar_local('-', fd);
-		number = -number;
-	}
-	if (number > 9)
-	{
-		ft_putnbr_fd(number / 10, fd);
-	}
-	ft_putchar_local((number % 10) + '0', fd);
+	if (c >= 65 && c <= 90)
+		return (1);
+	else
+		return (0);
 }

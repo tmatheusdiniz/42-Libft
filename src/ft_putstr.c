@@ -1,35 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/08 20:14:14 by mreinald          #+#    #+#             */
-/*   Updated: 2024/11/09 23:59:34 by mreinald         ###   ########.fr       */
+/*   Created: 2024/11/25 16:10:47 by mreinald          #+#    #+#             */
+/*   Updated: 2024/11/25 16:16:39 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	ft_putchar_local(char c, int fd)
+int	ft_putstr(char	*s)
 {
-	write(fd, &c, 1);
-}
-
-void	ft_putnbr_fd(int n, int fd)
-{
-	long int	number;
-
-	number = n;
-	if (number < 0)
-	{
-		ft_putchar_local('-', fd);
-		number = -number;
-	}
-	if (number > 9)
-	{
-		ft_putnbr_fd(number / 10, fd);
-	}
-	ft_putchar_local((number % 10) + '0', fd);
+	if (!s)
+		return (-1);
+	if (write(STDOUT_FILENO, s, ft_strlen(s)) == -1)
+		return (-1);
+	else
+		return (ft_strlen(s));
 }

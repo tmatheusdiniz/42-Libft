@@ -20,6 +20,10 @@
 # include <ctype.h>
 # include <unistd.h>
 
+//Functions from --stdio.h--
+
+int		ft_putchar(int c);
+
 //Functions from --stdlib.h--
 
 int		ft_atoi(const char *ptr);
@@ -54,6 +58,8 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+int		ft_isupper(int c);
+int		ft_islower(int c);
 
 //Non-standard functions
 
@@ -64,6 +70,7 @@ char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+int		ft_putstr(char *s);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
