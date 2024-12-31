@@ -17,8 +17,6 @@ Commom Core 42 - Libft
     <a href="#%EF%B8%8F-resources">Resources</a>
 <h3/>
 
-![Image](https://github.com/tmatheusdiniz/42-libft/releases/tag/Note)
-
 ## 📖 Libft
 
 This project has not yet graduated.
