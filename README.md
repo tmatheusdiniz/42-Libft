@@ -27,7 +27,7 @@ This project consist of recreating many of the functions standard and non-standa
 
 **Libraries used as support**
 
-Funcitons from libraries such as <stdlib.h>, <string.h>, <strings.h> and <ctype.h> were used. In additon, as you can see, non-standard library functions have also been used.
+Funcitons from libraries such as  <stdio.h> , <stdlib.h>, <string.h>, <strings.h> and <ctype.h> were used. In additon, as you can see, non-standard library functions have also been used.
 
 ### Funcitons from <stdio.h> library
 * [`ft_putchar`](src/ft_putchar.c)    - Displays the received character in the standard output. ❗(This function was added later)
