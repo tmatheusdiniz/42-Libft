@@ -29,16 +29,19 @@ This project consist of recreating many of the functions standard and non-standa
 
 Funcitons from libraries such as <stdlib.h>, <string.h>, <strings.h> and <ctype.h> were used. In additon, as you can see, non-standard library functions have also been used.
 
+### Funcitons from <stdio.h> library
+* [`ft_putchar`](src/ft_putchar.c)    - Displays the received character in the standard output. ❗(This function was added later)
+
 ### Functions from `<stdlib.h>` library
 
-* [`ft_atoi`](src/ft_atoi.c)		- convert ASCII string to integer.
+* [`ft_atoi`](src/ft_atoi.c)        - convert ASCII string to integer.
 * [`ft_strdup`](src/ft_strdup.c)    - memmory allocantion.
 * [`ft_calloc`](src/ft_calloc.c)	- memory allocation and set to zero.
 
 ### Functions from `<string.h>` library
 
-* [`ft_strlen`](src/ft_strlen.c)				- find length of string.
-* [`ft_strchr`](src/ft_strchr.c)				- locate character in string (first occurrence).
+* [`ft_strlen`](src/ft_strlen.c)            - find length of string.
+* [`ft_strchr`](src/ft_strchr.c)            - locate character in string (first occurrence).
 * [`ft_strrchr`](src/ft_strrchr.c)			- locate character in string (last occurence).
 * [`ft_strnstr`](src/ft_strnstr.c)			- locate a substring in a string (size-bounded).
 * [`ft_strncmp`](src/ft_strncmp.c) 			- compare strings (size-bounded).
@@ -57,20 +60,23 @@ Funcitons from libraries such as <stdlib.h>, <string.h>, <strings.h> and <ctype.
 
 ### Functions from `<ctype.h>` library
 
-* [`ft_isalnum`](src/ft_isalnum.c)			- alphanumeric character test.
-* [`ft_isascii`](src/ft_isascii.c)			- test for ASCII character.
-* [`ft_isalpha`](src/ft_isalpha.c)			- alphabetic character test.
-* [`ft_isdigit`](src/ft_isdigit.c)			- decimal-digit character test.
-* [`ft_isprint`](src/ft_isprint.c)			- printing character test.
-* [`ft_tolower`](src/ft_tolower.c)			- upper case to lower case letter conversion.
-* [`ft_toupper`](src/ft_toupper.c)			- lower case to upper case letter conversion.
+* [`ft_isalnum`](src/ft_isalnum.c)        - alphanumeric character test.
+* [`ft_isascii`](src/ft_isascii.c)        - test for ASCII character.
+* [`ft_isalpha`](src/ft_isalpha.c)        - alphabetic character test.
+* [`ft_isdigit`](src/ft_isdigit.c)        - decimal-digit character test.
+* [`ft_isprint`](src/ft_isprint.c)        - printing character test.
+* [`ft_islower`](src/ft_islower.c)        - detects lowercase characters. ❗(This function was added later)
+* [`ft_isupper`](src/ft_isupper.c)        - detects uppercase characters. ❗(This function was added later)
+* [`ft_tolower`](src/ft_tolower.c)        - upper case to lower case letter conversion.
+* [`ft_toupper`](src/ft_toupper.c)        - lower case to upper case letter conversion.
 
 ### Non-standard functions
 
-* [`ft_putchar_fd`](src/ft_putchar_fd.c)		- output a character to given file.
-* [`ft_putstr_fd`](src/ft_putstr_fd.c)		- output string to given file.
-* [`ft_putendl_fd`](src/ft_putendl_fd.c)		- output string to given file with newline.
-* [`ft_putnbr_fd`](src/ft_putnbr_fd.c)		- output integer to given file.
+* [`ft_putchar_fd`](src/ft_putchar_fd.c)        - output a character to given file.
+* [`ft_putstr_fd`](src/ft_putstr_fd.c)        - output string to given file.
+* [`ft_putstr`](src/ft_putstr.c)        - output string to standard output. ❗(This function was added later)
+* [`ft_putendl_fd`](src/ft_putendl_fd.c)        - output string to given file with newline.
+* [`ft_putnbr_fd`](src/ft_putnbr_fd.c)        - output integer to given file.
 * [`ft_itoa`](src/t_itoa.c)					- convert integer to ASCII string.
 * [`ft_substr`](src/ft_substr.c)				- extract substring from string.
 * [`ft_strtrim`](src/ft_strtrim.c)			- trim beginning and end of string with the specified characters.
