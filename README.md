@@ -20,6 +20,7 @@ Commom Core 42 - Libft
 ## 📖 Libft
 <br>
 <div align="center">
+    <p><i>This project has already been graded</i></p>
     <img src="https://github.com/tmatheusdiniz/42-libft/releases/download/Note/score.png")>
 </div>
 
