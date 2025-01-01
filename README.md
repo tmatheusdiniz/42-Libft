@@ -20,7 +20,7 @@ Commom Core 42 - Libft
 ## 📖 Libft
 <br>
 <div align="center">
-    <img src="https://github.com/tmatheusdiniz/42-libft/releases/download/Note/score.png")
+    <img src="https://github.com/tmatheusdiniz/42-libft/releases/download/Note/score.png")>
 </div>
 
 ## 🗣️ About
