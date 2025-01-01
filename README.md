@@ -12,7 +12,7 @@ Commom Core 42 - Libft
 <h3 align="center">
     <a href="#-libft">Index</a>
     <span> · </span>
-    <a href="#EF%B8%8F-about">About</a>
+    <a href="#%EF%B8%8F-about">About</a>
     <span> · </span>
     <a href="#%EF%B8%8F-resources">Resources</a>
 <h3/>
