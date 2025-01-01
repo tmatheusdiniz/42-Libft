@@ -18,8 +18,10 @@ Commom Core 42 - Libft
 <h3/>
 
 ## 📖 Libft
-
-This project has not yet graduated.
+<br>
+<div align="center">
+    <img src="https://github.com/tmatheusdiniz/42-libft/releases/download/Note/score.png")
+</div>
 
 ## 🗣️ About
 
