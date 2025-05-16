@@ -20,11 +20,11 @@ static long long	check_size(long long number, char n, int sign)
 			return (LLONG_MAX);
 		return (LLONG_MIN);
 	}
-	if (number == LLONG_MAX / 10 && (n  - '0') > (LLONG_MAX % 10))
+	if (number == LLONG_MAX / 10 && (n - '0') > (LLONG_MAX % 10))
 	{
-			if (sign == 1)
-				return (LLONG_MAX);
-			return (LLONG_MIN);
+		if (sign == 1)
+			return (LLONG_MAX);
+		return (LLONG_MIN);
 	}
 	return (number);
 }
