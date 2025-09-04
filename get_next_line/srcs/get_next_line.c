@@ -11,18 +11,17 @@
 /* ************************************************************************** */
 
 #include "../includes/get_next_line.h"
-#include <stdio.h>
 
 char	*get_read(int fd, char *str)
 {
 	char	*readed;
-	int		aux;	
+	int		aux;
 
-	readed = get_calloc(sizeof(char), BUFFER_SIZE + 1);
+	readed = ft_calloc(sizeof(char), BUFFER_SIZE + 1);
 	if (!readed)
 		return (NULL);
 	aux = 1;
-	while (!(get_strchr(str, '\n')) && aux != 0)
+	while (!(ft_strchr(str, '\n')) && aux != 0)
 	{
 		aux = read(fd, readed, BUFFER_SIZE);
 		if (aux < 0)
@@ -31,10 +30,8 @@ char	*get_read(int fd, char *str)
 			free(str);
 			return (NULL);
 		}
-		if (aux == 0)
-			break ;
 		readed[aux] = 0;
-		str = get_strjoin(str, readed);
+		str = ft_strjoin(str, readed);
 	}
 	free (readed);
 	return (str);
@@ -51,9 +48,9 @@ char	*get_line(char *str)
 	while (str[aux] && str[aux] != '\n')
 		aux ++;
 	if (str[aux] == '\0')
-		line = get_calloc(sizeof(char), aux + 1);
+		line = ft_calloc(sizeof(char), aux + 1);
 	else
-		line = get_calloc(sizeof(char), aux + 2);
+		line = ft_calloc(sizeof(char), aux + 2);
 	if (!line)
 		return (NULL);
 	aux = 0;
@@ -82,7 +79,7 @@ char	*get_next(char *str)
 		free (str);
 		return (NULL);
 	}
-	next = get_calloc(sizeof(char), (get_strlen(str) - aux + 1));
+	next = ft_calloc(sizeof(char), (ft_strlen(str) - aux + 1));
 	if (!next)
 	{
 		free (str);
@@ -97,11 +94,19 @@ char	*get_next(char *str)
 	return (next);
 }
 
+// I've added if (fd == -4) for cases where i wanna free the next line.
+
 char	*get_next_line(int fd)
 {
 	char		*line;
 	static char	*save;
 
+	if (fd == -4)
+	{
+		if (save)
+			free (save);
+		return (NULL);
+	}
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
 	save = get_read(fd, save);
